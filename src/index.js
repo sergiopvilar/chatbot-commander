@@ -1,16 +1,18 @@
 class Commander {
 
-  constructor(prefix, options) {
+  constructor(prefix = '!', options) {
     this.prefix = prefix
     this.commands = []
   }
 
   handle(string, attributes = {}) {
+    let cmd
+
     for (var i in this.commands) {
       cmd = this.commands[i]
       if (
-        cmd.input && message.content.startsWith(`${cmd.prefix}${cmd.command}`) ||
-        !cmd.input & message.content.trim() == `${cmd.prefix}${cmd.command}`
+        cmd.input && string.startsWith(`${cmd.prefix}${cmd.command}`) ||
+        !cmd.input & string.trim() == `${cmd.prefix}${cmd.command}`
       ) {
         cmd.handler(string.replace(`${cmd.prefix}${cmd.command}`, '').trim(), attributes)
         return
