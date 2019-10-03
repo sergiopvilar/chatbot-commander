@@ -16,7 +16,7 @@ import ChatbotCommander from 'chatbot-commander'
 const commander = new ChatbotCommander('!') // Set the command prefix to '!'
 
 // Registers a command
-commander.register({'test'}, (input, attrs) => {
+commander.register({command: 'test'}, (input, attrs) => {
   console.log(input) // outputs 'foo'
 })
 
