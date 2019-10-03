@@ -6,7 +6,7 @@ A chatbot-commander module to handle strings and call the proper callbacks, part
 
 At first don't forget to install the dependencies:
 
-    yarn
+    yarn add chatbot-commander
 
 Then import the module and start the fun:
 

@@ -1,6 +1,6 @@
 {
   "name": "chatbot-commander",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A chatbot-commander module to handle strings and call the proper callbacks",
   "author": "Sergio Vilar <sergiovilar.r@gmail.com>",
   "license": "MIT",
