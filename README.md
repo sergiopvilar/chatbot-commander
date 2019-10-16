@@ -1,5 +1,7 @@
 # Chatbot Commander
 
+[![Build Status](https://travis-ci.org/sergiopvilar/chatbot-commander.svg?branch=master)](https://travis-ci.org/sergiopvilar/chatbot-commander)
+
 A chatbot-commander module to handle strings and call the proper callbacks, particularly usefull for command oriented chatbots.
 
 ## How to use
