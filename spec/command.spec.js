@@ -53,6 +53,7 @@ describe('Commander', () => {
 
       commander.register({
         command: 'test',
+        input: false,
       }, (input, attrs) => {
         assert.equal(input, '');
         assert.equal(attrs, commandAttr);
